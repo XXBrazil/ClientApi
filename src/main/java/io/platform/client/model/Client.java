@@ -39,10 +39,10 @@ public class Client {
 
 	@OneToMany(fetch = FetchType.LAZY,
                cascade =  CascadeType.ALL)
-	private List<Email> email;
+	private List<Email> emails;
 
 	@OneToMany(fetch = FetchType.LAZY,
 			cascade =  CascadeType.ALL)
-	private List<Telefone> telefone;
+	private List<Telefone> telefones;
 
 }

@@ -55,8 +55,8 @@ public class ClientDTO {
     private String complemento;
 
     @NotEmpty
-    private List<Email> email;
+    private List<Email> emails;
 
     @NotEmpty
-    private List<Telefone> telefone;
+    private List<Telefone> telefones;
 }
