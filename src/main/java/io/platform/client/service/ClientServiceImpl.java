@@ -35,6 +35,11 @@ public class ClientServiceImpl implements ClientService {
     }
 
     @Override
+    public Client getByCpf(String cpf) {
+        return this.repository.findByCpf(cpf);
+    }
+
+    @Override
     public void delete(Client client) {
         if (client == null || client.getId() == null) {
             throw new IllegalArgumentException("Client id cannot be null");

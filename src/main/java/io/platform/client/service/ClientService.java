@@ -14,6 +14,8 @@ public interface ClientService {
 
 	Optional<Client> getById(Long id);
 
+	Client getByCpf(String cpf);
+
 	void delete(Client client);
 
 	Client update(Client client);
